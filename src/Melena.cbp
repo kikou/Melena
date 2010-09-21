@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Melena" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="../libMelena" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../../../../build/tmp/debug" />
+				<Option object_output="../../../../../../build/obj/debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGIMLETDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add directory="./../../../build/bin/debug" />
+				</Linker>
+			</Target>
+			<Target title="opt">
+				<Option output="../libMelena" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../../../../build/tmp/opt" />
+				<Option object_output="../../../../../../build/obj/opt" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="./../../../build/bin/opt" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fPIC" />
+			<Add directory="../../../../../../include" />
+			<Add directory="../../../../../../lib" />
+			<Add directory="../../../../../../include/Softimage_2010_SP1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sicppsdk" />
+			<Add library="sicoresdk" />
+			<Add directory="../../../../../lib" />
+			<Add directory="../../../../../../include/Softimage_2010_SP1/lib" />
+		</Linker>
+		<Unit filename="nest_melena.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

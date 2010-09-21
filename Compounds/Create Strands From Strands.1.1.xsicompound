@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="Create Strands From Strands" tasks="Melena/Emitters" formatversion="1.4" compoundversion="1.1" constructionmode="Current" backgroundcolor="354748">
+	<definition>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="self.SourceID"></param>
+				<param_ext name="reference" type="31" value="self.SourceID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">635</prop>
+					<prop name="posy">1751</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ExecuteNode" index="1">
+				<portdef name="port1" type="4096" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">361</prop>
+					<prop name="posy">1067</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="2">
+				<param name="reference" type="31" value="self.SourceID"></param>
+				<param_ext name="reference" type="31" value="self.SourceID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-698</prop>
+					<prop name="posy">1557</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="3">
+				<param name="Reference1" type="31" value="self.Size"></param>
+				<param name="Reference" type="31" value="self.Color"></param>
+				<param name="Value.Value_red" type="4" value="0.000000"></param>
+				<param name="Value.Value_green" type="4" value="0.000000"></param>
+				<param name="Value.Value_blue" type="4" value="1.000000"></param>
+				<param name="Value.Value_alpha" type="4" value="1.000000"></param>
+				<param name="Value1" type="4" value="0.005000"></param>
+				<param_ext name="Reference1" type="31" value="self.Size"></param_ext>
+				<param_ext name="Reference" type="31" value="self.Color"></param_ext>
+				<portdef name="Value1" type="4" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="Value" type="512" structure="1" group="2" instance="1" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">322</prop>
+					<prop name="posy">748</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="4">
+				<param name="reference" type="31" value="self.StrandPosition"></param>
+				<param_ext name="reference" type="31" value="self.StrandPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-609</prop>
+					<prop name="posy">1759</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="5">
+				<param name="first.first_x" type="4" value="0.000000"></param>
+				<param name="first.first_y" type="4" value="0.000000"></param>
+				<param name="first.first_z" type="4" value="0.000000"></param>
+				<param name="second.second_x" type="4" value="0.000000"></param>
+				<param name="second.second_y" type="4" value="0.000000"></param>
+				<param name="second.second_z" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="false"></param>
+				<portdef name="first" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="16" structure="2" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">161</prop>
+					<prop name="posy">1744</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IDToLocation" index="6">
+				<param name="id" type="3" value="0"></param>
+				<portdef name="geometry" type="1024" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="id" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-476</prop>
+					<prop name="posy">1497</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="7">
+				<param name="reference" type="31" value="self.StrandVelocity"></param>
+				<param_ext name="reference" type="31" value="self.StrandVelocity"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-71</prop>
+					<prop name="posy">1819</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ClonePointNode" index="8">
+				<param name="reference" type="31" value="Self"></param>
+				<param name="targetreference" type="31" value="Self"></param>
+				<param name="toclone" type="11" value="true"></param>
+				<param name="deletesourcepoint" type="11" value="false"></param>
+				<param name="numbertoclone" type="3" value="10"></param>
+				<param_ext name="reference" type="31" value="Self"></param_ext>
+				<portdef name="toclone" type="1" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname1" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<portdef name="inname2" type="8192" structure="1" group="3" instance="1" port="0"></portdef>
+				<portdef name="deletesourcepoint" type="1" structure="1" group="4" instance="0" port="0"></portdef>
+				<portdef name="numbertoclone" type="2" structure="1" group="5" instance="0" port="0"></portdef>
+				<portdef name="oncreation1" type="4096" structure="1" group="6" instance="0" port="0"></portdef>
+				<portdef name="oncreation2" type="4096" structure="1" group="6" instance="1" port="0"></portdef>
+				<portdef name="oncreation3" type="4096" structure="1" group="6" instance="2" port="0"></portdef>
+				<portdef name="oncreation4" type="4096" structure="1" group="6" instance="3" port="0"></portdef>
+				<portdef name="oncreation5" type="4096" structure="1" group="6" instance="4" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">999</prop>
+					<prop name="posy">1141</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="9">
+				<param name="reference" type="31" value="self.ID"></param>
+				<param_ext name="reference" type="31" value="self.ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">648</prop>
+					<prop name="posy">1624</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SelectInArrayNode" index="10">
+				<param name="index" type="3" value="0"></param>
+				<param name="array.array_x" type="4" value="0.000000"></param>
+				<param name="array.array_y" type="4" value="0.000000"></param>
+				<param name="array.array_z" type="4" value="0.000000"></param>
+				<portdef name="index" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="array" type="16" structure="2" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">170</prop>
+					<prop name="posy">1214</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="11">
+				<param name="Reference" type="31" value="self.SourceID"></param>
+				<param name="Value" type="3" value="0"></param>
+				<param_ext name="Reference" type="31" value="self.SourceID"></param_ext>
+				<portdef name="Value" type="2" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">741</prop>
+					<prop name="posy">687</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="12">
+				<param name="reference" type="31" value="self.StrandPosition"></param>
+				<param_ext name="reference" type="31" value="self.StrandPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-89</prop>
+					<prop name="posy">1279</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="DeletePointNode" index="13">
+				<param name="reference" type="31" value="Self"></param>
+				<param name="deleted" type="11" value="false"></param>
+				<param_ext name="reference" type="31" value="Self"></param_ext>
+				<portdef name="deleted" type="1" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1012</prop>
+					<prop name="posy">1649</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Init Strand Simulation" version="1.1" index="14">
+				<datablob category="ui_infos">
+					<prop name="posx">277</prop>
+					<prop name="posy">985</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="CompareNode" index="15">
+				<param name="type" type="3" value="0"></param>
+				<param name="epsilon" type="5" value="0.001000"></param>
+				<param name="first" type="3" value="0"></param>
+				<param name="second" type="3" value="0"></param>
+				<portdef name="first" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">864</prop>
+					<prop name="posy">1670</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="IfNode" index="16">
+				<param name="condition" type="11" value="true"></param>
+				<portdef name="condition" type="1" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="iftrue" type="4096" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="iffalse" type="4096" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1112</prop>
+					<prop name="posy">1420</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="BuildArrayFromConstantNode" index="17">
+				<param name="size" type="3" value="0"></param>
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="0.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<portdef name="size" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value" type="16" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-72</prop>
+					<prop name="posy">1635</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetArraySizeNode" index="18">
+				<param name="array.array_x" type="4" value="0.000000"></param>
+				<param name="array.array_y" type="4" value="0.000000"></param>
+				<param name="array.array_z" type="4" value="0.000000"></param>
+				<portdef name="array" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-309</prop>
+					<prop name="posy">1712</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ExecuteNode" index="19">
+				<portdef name="port1" type="4096" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="port2" type="4096" structure="1" group="0" instance="1" port="0"></portdef>
+				<portdef name="port3" type="4096" structure="1" group="0" instance="2" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">1291</prop>
+					<prop name="posy">1163</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="FirstValidNode" index="20">
+				<param name="in1.in1_x" type="4" value="0.000000"></param>
+				<param name="in1.in1_y" type="4" value="0.000000"></param>
+				<param name="in1.in1_z" type="4" value="0.000000"></param>
+				<param name="in2.in2_x" type="4" value="0.000000"></param>
+				<param name="in2.in2_y" type="4" value="0.000000"></param>
+				<param name="in2.in2_z" type="4" value="0.000000"></param>
+				<portdef name="in1" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<portdef name="in2" type="16" structure="2" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">212</prop>
+					<prop name="posy">1560</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="21">
+				<param name="Reference1" type="31" value="self.StrandPosition"></param>
+				<param name="Reference" type="31" value="self.StrandVelocity"></param>
+				<param name="Value.Value_x" type="4" value="0.000000"></param>
+				<param name="Value.Value_y" type="4" value="0.000000"></param>
+				<param name="Value.Value_z" type="4" value="0.000000"></param>
+				<param name="Value1.Value1_x" type="4" value="0.000000"></param>
+				<param name="Value1.Value1_y" type="4" value="0.000000"></param>
+				<param name="Value1.Value1_z" type="4" value="0.000000"></param>
+				<param_ext name="Reference1" type="31" value="self.StrandPosition"></param_ext>
+				<param_ext name="Reference" type="31" value="self.StrandVelocity"></param_ext>
+				<portdef name="Value1" type="16" structure="2" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="Value" type="16" structure="2" group="2" instance="1" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">433</prop>
+					<prop name="posy">1569</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="22">
+				<param name="reference" type="31" value="self"></param>
+				<param_ext name="reference" type="31" value="self"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-672</prop>
+					<prop name="posy">1426</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="23">
+				<param name="reference" type="31" value="StrandVelocity"></param>
+				<param_ext name="reference" type="31" value="StrandVelocity"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-253</prop>
+					<prop name="posy">1508</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="24">
+				<param name="Reference3" type="31" value="self.Orientation"></param>
+				<param name="Reference5" type="31" value="self.PointVelocity"></param>
+				<param name="Reference" type="31" value="self.PointPosition"></param>
+				<param name="Reference2" type="31" value="self.StrandGroom"></param>
+				<param name="Reference1" type="31" value="self.Shape"></param>
+				<param name="Reference4" type="31" value="self.Scale"></param>
+				<param name="Value.Value_x" type="4" value="0.000000"></param>
+				<param name="Value.Value_y" type="4" value="0.000000"></param>
+				<param name="Value.Value_z" type="4" value="0.000000"></param>
+				<param name="Value1" type="3" value="1"></param>
+				<param name="Value2.Value2_x" type="4" value="0.000000"></param>
+				<param name="Value2.Value2_y" type="4" value="0.000000"></param>
+				<param name="Value2.Value2_z" type="4" value="0.000000"></param>
+				<param name="Value3.Value3_x" type="4" value="1.000000"></param>
+				<param name="Value3.Value3_y" type="4" value="0.000000"></param>
+				<param name="Value3.Value3_z" type="4" value="0.000000"></param>
+				<param name="Value3.Value3_angle" type="4" value="0.000000"></param>
+				<param name="Value4.Value4_x" type="4" value="1.000000"></param>
+				<param name="Value4.Value4_y" type="4" value="1.000000"></param>
+				<param name="Value4.Value4_z" type="4" value="1.000000"></param>
+				<param name="Value5.Value5_x" type="4" value="0.000000"></param>
+				<param name="Value5.Value5_y" type="4" value="0.000000"></param>
+				<param name="Value5.Value5_z" type="4" value="0.000000"></param>
+				<param_ext name="Reference3" type="31" value="self.Orientation"></param_ext>
+				<param_ext name="Reference5" type="31" value="self.PointVelocity"></param_ext>
+				<param_ext name="Reference" type="31" value="self.PointPosition"></param_ext>
+				<param_ext name="Reference2" type="31" value="self.StrandGroom"></param_ext>
+				<param_ext name="Reference1" type="31" value="self.Shape"></param_ext>
+				<param_ext name="Reference4" type="31" value="self.Scale"></param_ext>
+				<portdef name="Value3" type="16384" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Value5" type="16" structure="1" group="2" instance="1" port="0" groupname="Value"></portdef>
+				<portdef name="Value" type="16" structure="1" group="2" instance="2" port="0" groupname="Value"></portdef>
+				<portdef name="Value2" type="16" structure="2" group="2" instance="3" port="0" groupname="Value"></portdef>
+				<portdef name="Value1" type="32768" structure="1" group="2" instance="4" port="0" groupname="Value"></portdef>
+				<portdef name="Value4" type="16" structure="1" group="2" instance="5" port="0" groupname="Value"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">438</prop>
+					<prop name="posy">1237</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="25">
+				<param name="reference" type="31" value="self.ID"></param>
+				<param_ext name="reference" type="31" value="self.ID"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">519</prop>
+					<prop name="posy">678</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="1" portname="port1" username="ExecuteOnCreate" basename="ExecuteOnCreate" portlabel="ExecuteOnCreate" exposetype="all_instances"> </port>
+			<port index="3" portname="Value" username="Color" basename="Color" portlabel="Color" exposetype="single"> </port>
+			<port index="3" portname="Value1" username="Size" basename="Size" portlabel="Size" exposetype="single"> </port>
+			<port index="8" portname="numbertoclone" username="Number_to_Clone" basename="Number to Clone" portlabel="Number to Clone" exposetype="single"> </port>
+			<port index="16" portname="condition" username="Delete_Source_If_Cloned" basename="Delete Source If Cloned" portlabel="Delete Source If Cloned" exposetype="single"> </port>
+			<port index="19" portname="execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="5" from_port="result" to_node="21" to_port="Value1"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="15" to_port="second"> </cnx>
+			<cnx from_node="8" from_port="clone" to_node="19" to_port="port2"> </cnx>
+			<cnx from_node="1" from_port="execute" to_node="8" to_port="oncreation3"> </cnx>
+			<cnx from_node="3" from_port="Execute" to_node="8" to_port="oncreation1"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="5" to_port="first"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="18" to_port="array"> </cnx>
+			<cnx from_node="9" from_port="value" to_node="15" to_port="first"> </cnx>
+			<cnx from_node="20" from_port="out" to_node="21" to_port="Value"> </cnx>
+			<cnx from_node="7" from_port="value" to_node="5" to_port="second"> </cnx>
+			<cnx from_node="13" from_port="execute" to_node="16" to_port="iftrue"> </cnx>
+			<cnx from_node="16" from_port="result" to_node="19" to_port="port3"> </cnx>
+			<cnx from_node="14" from_port="Execute" to_node="8" to_port="oncreation2"> </cnx>
+			<cnx from_node="21" from_port="Execute" to_node="8" to_port="oncreation5"> </cnx>
+			<cnx from_node="17" from_port="array" to_node="20" to_port="in2"> </cnx>
+			<cnx from_node="25" from_port="value" to_node="11" to_port="Value"> </cnx>
+			<cnx from_node="23" from_port="value" to_node="20" to_port="in1"> </cnx>
+			<cnx from_node="6" from_port="result" to_node="23" to_port="source"> </cnx>
+			<cnx from_node="15" from_port="result" to_node="13" to_port="deleted"> </cnx>
+			<cnx from_node="10" from_port="value" to_node="24" to_port="Value"> </cnx>
+			<cnx from_node="22" from_port="value" to_node="6" to_port="geometry"> </cnx>
+			<cnx from_node="24" from_port="Execute" to_node="8" to_port="oncreation4"> </cnx>
+			<cnx from_node="11" from_port="Execute" to_node="19" to_port="port1"> </cnx>
+			<cnx from_node="18" from_port="size" to_node="17" to_port="size"> </cnx>
+			<cnx from_node="12" from_port="value" to_node="10" to_port="array"> </cnx>
+			<cnx from_node="12" from_port="value" to_node="24" to_port="Value2"> </cnx>
+			<cnx from_node="2" from_port="value" to_node="6" to_port="id"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Number_to_Clone"> </item>
+			<item type="input" name="Delete_Source_If_Cloned"> </item>
+			<item type="input" name="Color"> </item>
+			<item type="input" name="Size" min="0" max="1"> </item>
+			<item type="input" name="ExecuteOnCreate" min="0" max="0"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

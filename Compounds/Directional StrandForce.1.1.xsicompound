@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="Directional StrandForce" category="" tasks="Melena/Forces" author="" url="" formatversion="1.4" compoundversion="1.1" versiontag="" constructionmode="Current" backgroundcolor="15311985">
+	<description><![CDATA[]]></description>
+	<definition>
+		<nodes>
+			<node type="MultiplyByScalarNode" index="0">
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="-3.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<param name="factor" type="4" value="1.000000"></param>
+				<portdef name="value" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="factor" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">378</prop>
+					<prop name="posy">90</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Strand FCurve" version="1.2" index="1">
+				<param name="Profile" type="buffer">2 20 1 0 -1.79769E+308 1.79769E+308 3 0
+0 0.000000 0.000000 0.333333 0.000000 -0.333333 0.000000 4 3
+0 1.000000 1.000000 0.333333 0.000000 -0.333333 0.000000 4 3
+</param>
+				<param name="Min_Value" type="4" value="0.000000"></param>
+				<param name="Max_Value" type="4" value="1.000000"></param>
+				<portdef name="Min_Value" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Max_Value" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">191</prop>
+					<prop name="posy">232</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="value" username="Force" basename="Force" portlabel="Force" exposetype="single"> </port>
+			<port index="0" portname="result" username="Result" basename="Result" portlabel="Result" exposetype="single"> </port>
+			<port index="1" portname="Min_Value" username="Min_Value" basename="Min Value" portlabel="Min Value" exposetype="single"> </port>
+			<port index="1" portname="Max_Value" username="Max_Value" basename="Max Value" portlabel="Max Value" exposetype="single"> </port>
+			<port index="1" portname="Profile" username="Profile" basename="Profile" portlabel="Profile" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="Result" to_node="0" to_port="factor"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Force"> </item>
+			<item type="input" name="Min_Value"> </item>
+			<item type="input" name="Max_Value"> </item>
+			<item type="input" name="Profile"> </item>
+			<item type="output" name="Result"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

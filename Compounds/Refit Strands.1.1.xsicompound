@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="Refit Strands" category="" tasks="Melena/Modifiers" author="" url="" formatversion="1.4" compoundversion="1.1" versiontag="" constructionmode="Current" backgroundcolor="7316707">
+	<description><![CDATA[]]></description>
+	<definition>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="self.StrandPosition"></param>
+				<param_ext name="reference" type="31" value="self.StrandPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-1158</prop>
+					<prop name="posy">764</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="self.StrandLength"></param>
+				<param_ext name="reference" type="31" value="self.StrandLength"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-931</prop>
+					<prop name="posy">715</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="2">
+				<param name="in.in_x" type="4" value="0.000000"></param>
+				<param name="in.in_y" type="4" value="0.000000"></param>
+				<param name="in.in_z" type="4" value="0.000000"></param>
+				<portdef name="in" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-38</prop>
+					<prop name="posy">695</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetArraySizeNode" index="3">
+				<param name="array.array_x" type="4" value="0.000000"></param>
+				<param name="array.array_y" type="4" value="0.000000"></param>
+				<param name="array.array_z" type="4" value="0.000000"></param>
+				<portdef name="array" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-586</prop>
+					<prop name="posy">623</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="nest_StrandFitting" index="4">
+				<param name="StrandPosition.StrandPosition_x" type="4" value="1.000000"></param>
+				<param name="StrandPosition.StrandPosition_y" type="4" value="1.000000"></param>
+				<param name="StrandPosition.StrandPosition_z" type="4" value="1.000000"></param>
+				<param name="Count" type="3" value="5"></param>
+				<param name="Min" type="4" value="0.000000"></param>
+				<param name="Max" type="4" value="1.000000"></param>
+				<portdef name="StrandPosition" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<portdef name="Count" type="2" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="Min" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="Max" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-324</prop>
+					<prop name="posy">646</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Get Strand Length" version="1.1" index="5">
+				<param name="StrandPosition.StrandPosition_x" type="4" value="0.000000"></param>
+				<param name="StrandPosition.StrandPosition_y" type="4" value="0.000000"></param>
+				<param name="StrandPosition.StrandPosition_z" type="4" value="0.000000"></param>
+				<portdef name="StrandPosition" type="16" structure="2" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-920</prop>
+					<prop name="posy">826</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="DivideByScalarNode" index="6">
+				<param name="value" type="4" value="0.000000"></param>
+				<param name="divideby" type="4" value="1.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="divideby" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-714</prop>
+					<prop name="posy">739</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="7">
+				<param name="Reference" type="31" value="self.StrandPosition"></param>
+				<param name="Value.Value_x" type="4" value="0.000000"></param>
+				<param name="Value.Value_y" type="4" value="0.000000"></param>
+				<param name="Value.Value_z" type="4" value="0.000000"></param>
+				<param_ext name="Reference" type="31" value="self.StrandPosition"></param_ext>
+				<portdef name="Value" type="16" structure="2" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">138</prop>
+					<prop name="posy">676</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="ClampNode" index="8">
+				<param name="value" type="4" value="1.000000"></param>
+				<param name="limit1" type="4" value="0.000000"></param>
+				<param name="limit2" type="4" value="1.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="limit1" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="limit2" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-622</prop>
+					<prop name="posy">870</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MultiplyNode" index="9">
+				<param name="value1" type="4" value="1.000000"></param>
+				<param name="value2" type="4" value="1.000000"></param>
+				<portdef name="value1" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="4" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-475</prop>
+					<prop name="posy">764</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="7" portname="Execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="8" portname="value" username="Shrink" basename="Shrink" portlabel="Shrink" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="5" from_port="Length" to_node="6" to_port="divideby"> </cnx>
+			<cnx from_node="3" from_port="size" to_node="4" to_port="Count"> </cnx>
+			<cnx from_node="6" from_port="result" to_node="9" to_port="value1"> </cnx>
+			<cnx from_node="4" from_port="Result" to_node="2" to_port="in"> </cnx>
+			<cnx from_node="1" from_port="value" to_node="6" to_port="value"> </cnx>
+			<cnx from_node="9" from_port="result" to_node="4" to_port="Max"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="5" to_port="StrandPosition"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="3" to_port="array"> </cnx>
+			<cnx from_node="0" from_port="value" to_node="4" to_port="StrandPosition"> </cnx>
+			<cnx from_node="8" from_port="result" to_node="9" to_port="value2"> </cnx>
+			<cnx from_node="2" from_port="out" to_node="7" to_port="Value"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Shrink" min="0" max="1"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="Turbulence StrandForce" category="" tasks="Melena/Forces" author="" url="" formatversion="1.4" compoundversion="1.1" versiontag="" constructionmode="Current" backgroundcolor="15311985">
+	<description><![CDATA[]]></description>
+	<definition>
+		<nodes>
+			<node type="GetDataNode" index="0">
+				<param name="reference" type="31" value="self.StrandPosition"></param>
+				<param_ext name="reference" type="31" value="self.StrandPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-356</prop>
+					<prop name="posy">519</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="TurbulenceNode" index="1">
+				<param name="noisetype" type="3" value="1"></param>
+				<param name="seed" type="3" value="12345"></param>
+				<param name="timevarying" type="11" value="true"></param>
+				<param name="position.position_x" type="4" value="0.000000"></param>
+				<param name="position.position_y" type="4" value="0.000000"></param>
+				<param name="position.position_z" type="4" value="0.000000"></param>
+				<param name="timefrequency" type="4" value="0.100000"></param>
+				<param name="spacefrequency.spacefrequency_x" type="4" value="0.200000"></param>
+				<param name="spacefrequency.spacefrequency_y" type="4" value="0.200000"></param>
+				<param name="spacefrequency.spacefrequency_z" type="4" value="0.200000"></param>
+				<param name="complexity" type="3" value="1"></param>
+				<portdef name="seed" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="timevarying" type="1" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="position" type="16" structure="2" group="0" instance="0" port="2"></portdef>
+				<portdef name="timefrequency" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<portdef name="spacefrequency" type="16" structure="1" group="0" instance="0" port="4"></portdef>
+				<portdef name="complexity" type="2" structure="1" group="0" instance="0" port="5"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-99</prop>
+					<prop name="posy">533</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MultiplyByScalarNode" index="2">
+				<param name="value.value_x" type="4" value="0.000000"></param>
+				<param name="value.value_y" type="4" value="0.000000"></param>
+				<param name="value.value_z" type="4" value="0.000000"></param>
+				<param name="factor" type="4" value="1.000000"></param>
+				<portdef name="value" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<portdef name="factor" type="4" structure="1" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">92</prop>
+					<prop name="posy">546</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="1" portname="spacefrequency" username="Space_Frequency" basename="Space Frequency" portlabel="Space Frequency" exposetype="single"> </port>
+			<port index="1" portname="timefrequency" username="Time_Frequency" basename="Time Frequency" portlabel="Time Frequency" exposetype="single"> </port>
+			<port index="1" portname="timevarying" username="Time_Varying" basename="Time Varying" portlabel="Time Varying" exposetype="single"> </port>
+			<port index="1" portname="seed" username="Seed" basename="Seed" portlabel="Seed" exposetype="single"> </port>
+			<port index="1" portname="complexity" username="Complexity" basename="Complexity" portlabel="Complexity" exposetype="single"> </port>
+			<port index="2" portname="result" username="Force" basename="Force" portlabel="Force" exposetype="single"> </port>
+			<port index="2" portname="factor" username="Factor" basename="Factor" portlabel="Factor" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="0" from_port="value" to_node="1" to_port="position"> </cnx>
+			<cnx from_node="1" from_port="result" to_node="2" to_port="value"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Space_Frequency"> </item>
+			<item type="input" name="Time_Frequency"> </item>
+			<item type="input" name="Time_Varying"> </item>
+			<item type="input" name="Seed"> </item>
+			<item type="input" name="Complexity"> </item>
+			<item type="input" name="Factor"> </item>
+			<item type="output" name="Force"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>

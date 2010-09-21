@@ -1,0 +1,480 @@
+# depslib dependency file v1.0
+1283849600 source:/opensource/nest_workgroup/Addons/nest_melena/Application/Plugins/src/nest_melena.cpp
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_icenodecontext.h>
+	<xsi_icenodedef.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_math.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_rotationf.h>
+	<xsi_quaternionf.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+	<xsi_indexset.h>
+	<xsi_floatarray.h>
+	<xsi_dataarray.h>
+	<xsi_dataarray2D.h>
+	<xsi_doublearray.h>
+	<xsi_x3dobject.h>
+	<xsi_primitive.h>
+	<xsi_selection.h>
+	<xsi_customoperator.h>
+	<xsi_ppglayout.h>
+	<xsi_menu.h>
+	<xsi_menuitem.h>
+	<xsi_polygonmesh.h>
+	<xsi_operatorcontext.h>
+	<xsi_iceattribute.h>
+	<xsi_iceattributedataarray.h>
+	<xsi_iceattributedataarray2D.h>
+	<xsi_nurbscurvelist.h>
+	<xsi_hairprimitive.h>
+	<xsi_kinematicstate.h>
+	<xsi_kinematics.h>
+	<xsi_port.h>
+	<xsi_operator.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_point.h>
+	<xsi_nurbsdata.h>
+	<xsi_polygonmesh.h>
+	<xsi_facet.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_application.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_siobject.h
+	<xsi_base.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_base.h
+	"sicppsdk.h"
+	"xsi_decl.h"
+	"xsi_ref.h"
+	"xsi_status.h"
+	"xsi_string.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/sicppsdk.h
+	<values.h>
+	<FLOAT.H>
+	<assert.h>
+	<limits.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_decl.h
+	<stdlib.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_ref.h
+	"sicppsdk.h"
+	"xsi_string.h"
+	"xsi_decl.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_string.h
+	"sicppsdk.h"
+	<stdlib.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_status.h
+	"sicppsdk.h"
+	"xsi_string.h"
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_value.h
+	"sicppsdk.h"
+	"xsi_ref.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_context.h
+	<xsi_base.h>
+	<xsi_value.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_pluginregistrar.h
+	<xsi_siobject.h>
+	<xsi_pluginitem.h>
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customproperty.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_pluginitem.h
+	<xsi_siobject.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_customproperty.h
+	<xsi_property.h>
+	<xsi_status.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_property.h
+	<xsi_projectitem.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_projectitem.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_parameter.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_parameter.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_ppglayout.h
+	<xsi_base.h>
+	<xsi_ppgitem.h>
+	<xsi_value.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_ppgitem.h
+	<xsi_base.h>
+	<xsi_value.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_ppgeventcontext.h
+	<xsi_base.h>
+	<xsi_value.h>
+	<xsi_context.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_selection.h
+	<xsi_base.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_icenodecontext.h
+	<xsi_context.h>
+	<xsi_time.h>
+	<xsi_longarray.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_time.h
+	"sicppsdk.h"
+	"xsi_string.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_longarray.h
+	"sicppsdk.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_icenodedef.h
+	<xsi_base.h>
+	<xsi_value.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_command.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_application.h>
+	<xsi_argument.h>
+	<xsi_command.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_x3dobject.h>
+	<xsi_model.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_argument.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_x3dobject.h
+	<xsi_sceneitem.h>
+	<xsi_status.h>
+	<xsi_math.h>
+	<xsi_nurbsdata.h>
+	<xsi_application.h>
+	<xsi_model.h>
+	<xsi_x3dobject.h>
+	<xsi_application.h>
+	<xsi_model.h>
+	<xsi_x3dobject.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_sceneitem.h
+	<xsi_projectitem.h>
+	<xsi_customproperty.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_math.h
+	"sicppsdk.h"
+	"xsi_vector3.h"
+	"xsi_vector4.h"
+	"xsi_matrix3.h"
+	"xsi_matrix4.h"
+	"xsi_transformation.h"
+	"xsi_quaternion.h"
+	"xsi_rotation.h"
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_vector3.h
+	"sicppsdk.h"
+	"xsi_status.h"
+	"xsi_matrix3.h"
+	"xsi_matrix4.h"
+	<math.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_matrix3.h
+	"sicppsdk.h"
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_matrix4.h
+	"sicppsdk.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_vector4.h
+	"sicppsdk.h"
+	"xsi_status.h"
+	"xsi_matrix4.h"
+	"xsi_transformation.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_transformation.h
+	"sicppsdk.h"
+	"xsi_rotation.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_rotation.h
+	"sicppsdk.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_quaternion.h
+	"sicppsdk.h"
+	"xsi_rotation.h"
+	"xsi_vector3.h"
+	"xsi_vector4.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_nurbsdata.h
+	<xsi_decl.h>
+	<xsi_vector4.h>
+	<xsi_doublearray.h>
+	<xsi_longarray.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_doublearray.h
+	"sicppsdk.h"
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_model.h
+	<xsi_x3dobject.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_factory.h
+	"sicppsdk.h"
+	<xsi_siobject.h>
+	"xsi_status.h"
+	"xsi_value.h"
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_vector2f.h
+	"sicppsdk.h"
+	<math.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_vector3f.h
+	"sicppsdk.h"
+	<math.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_matrix3f.h
+	"sicppsdk.h"
+	"math.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_matrix4f.h
+	"sicppsdk.h"
+	"math.h"
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_vector4f.h
+	"sicppsdk.h"
+	"xsi_matrix4f.h"
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_rotationf.h
+	"sicppsdk.h"
+	"xsi_math.h"
+	"xsi_vector3f.h"
+	"xsi_vector4f.h"
+	"xsi_matrix3f.h"
+	"xsi_quaternionf.h"
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_quaternionf.h
+	"sicppsdk.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_color4f.h
+	"sicppsdk.h"
+	<math.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_shape.h
+	"sicppsdk.h"
+	<xsi_decl.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_indexset.h
+	<sicppsdk.h>
+	<xsi_icenodecontext.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_floatarray.h
+	"sicppsdk.h"
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_dataarray.h
+	<sicppsdk.h>
+	<xsi_icenodecontext.h>
+	<xsi_indexset.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_quaternionf.h>
+	<xsi_rotationf.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_color4f.h>
+	<xsi_shape.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_dataarray2D.h
+	<sicppsdk.h>
+	<xsi_icenodecontext.h>
+	<xsi_indexset.h>
+	<xsi_dataarray.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_quaternionf.h>
+	<xsi_rotationf.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_color4f.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_primitive.h
+	<xsi_projectitem.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_customoperator.h
+	<xsi_operator.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_operator.h
+	<xsi_projectitem.h>
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_menu.h
+	<xsi_menuitem.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_menuitem.h
+	<xsi_uiobject.h>
+	<xsi_status.h>
+	<xsi_decl.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_uiobject.h
+	<xsi_siobject.h>
+	<xsi_value.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_polygonmesh.h
+	<xsi_geometry.h>
+	<xsi_clusterproperty.h>
+	<xsi_pointlocatordata.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_geometry.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+	<xsi_doublearray.h>
+	<xsi_cluster.h>
+	<xsi_clusterproperty.h>
+	<xsi_pointlocatordata.h>
+	<xsi_vector3.h>
+	<xsi_application.h>
+	<xsi_context.h>
+	<xsi_pluginregistrar.h>
+	<xsi_status.h>
+	<xsi_customoperator.h>
+	<xsi_operatorcontext.h>
+	<xsi_ppglayout.h>
+	<xsi_ppgeventcontext.h>
+	<xsi_selection.h>
+	<xsi_point.h>
+	<xsi_primitive.h>
+	<xsi_command.h>
+	<xsi_factory.h>
+	<xsi_geometry.h>
+	<xsi_model.h>
+	<xsi_x3dobject.h>
+	<xsi_kinematics.h>
+	<xsi_outputport.h>
+	<xsi_transformation.h>
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_cluster.h
+	<xsi_sceneitem.h>
+	<xsi_status.h>
+	<xsi_longarray.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_clusterproperty.h
+	<xsi_property.h>
+	<xsi_status.h>
+	<xsi_doublearray.h>
+	<xsi_longarray.h>
+	<xsi_bitarray.h>
+	<xsi_floatarray.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_bitarray.h
+	"sicppsdk.h"
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_pointlocatordata.h
+	<xsi_base.h>
+	<xsi_ppgitem.h>
+	<xsi_value.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_operatorcontext.h
+	<xsi_base.h>
+	<xsi_value.h>
+	<xsi_time.h>
+	<xsi_context.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_point.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_kinematics.h
+	<xsi_property.h>
+	<xsi_vector3.h>
+	<xsi_kinematicstate.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_kinematicstate.h
+	<xsi_parameter.h>
+	<xsi_transformation.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_outputport.h
+	<xsi_port.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_port.h
+	<xsi_siobject.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_iceattribute.h
+	<xsi_siobject.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_iceattributedataarray.h
+	<sicppsdk.h>
+	<xsi_iceattributedataarray.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_quaternionf.h>
+	<xsi_rotationf.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_color4f.h>
+	<xsi_indexset.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_iceattributedataarray2D.h
+	<sicppsdk.h>
+	<xsi_iceattributedataarray.h>
+	<xsi_vector2f.h>
+	<xsi_vector3f.h>
+	<xsi_vector4f.h>
+	<xsi_quaternionf.h>
+	<xsi_rotationf.h>
+	<xsi_matrix3f.h>
+	<xsi_matrix4f.h>
+	<xsi_color4f.h>
+
+1283856981 /opensource/include/Softimage_2010_SP1/include/xsi_nurbscurvelist.h
+	<xsi_geometry.h>
+	<xsi_nurbsdata.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_hairprimitive.h
+	<xsi_primitive.h>
+	<xsi_renderhairaccessor.h>
+	<xsi_status.h>
+
+1283856980 /opensource/include/Softimage_2010_SP1/include/xsi_renderhairaccessor.h
+	<xsi_base.h>
+	<xsi_status.h>
+
+1283856979 /opensource/include/Softimage_2010_SP1/include/xsi_facet.h
+	<xsi_siobject.h>
+	<xsi_math.h>
+	<xsi_longarray.h>
+

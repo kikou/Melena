@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsi_file type="CompoundNode" name="Set StrandColor From TextureMap" category="" tasks="Melena/Setters,Melena/Modifiers" author="" url="" formatversion="1.4" compoundversion="1.1" versiontag="" constructionmode="Current" backgroundcolor="7316707">
+	<description><![CDATA[]]></description>
+	<definition>
+		<nodes>
+			<node type="GetClosestLocationNode" index="0">
+				<param name="proximitymethod" type="3" value="0"></param>
+				<param name="position.position_x" type="4" value="0.000000"></param>
+				<param name="position.position_y" type="4" value="0.000000"></param>
+				<param name="position.position_z" type="4" value="0.000000"></param>
+				<param name="enablecutoffdistance" type="11" value="false"></param>
+				<param name="cutoffdistance" type="4" value="0.000000"></param>
+				<portdef name="geometry" type="1024" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="position" type="16" structure="2" group="0" instance="0" port="1"></portdef>
+				<portdef name="enablecutoffdistance" type="1" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="cutoffdistance" type="4" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">182</prop>
+					<prop name="posy">1383</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="self.StrandPosition"></param>
+				<param_ext name="reference" type="31" value="self.StrandPosition"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-544</prop>
+					<prop name="posy">1369</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="2">
+				<param name="Reference1" type="31" value="self.Color"></param>
+				<param name="Reference" type="31" value="self.StrandColor"></param>
+				<param name="Value.Value_red" type="4" value="0.000000"></param>
+				<param name="Value.Value_green" type="4" value="0.000000"></param>
+				<param name="Value.Value_blue" type="4" value="0.000000"></param>
+				<param name="Value.Value_alpha" type="4" value="1.000000"></param>
+				<param name="Value1.Value1_red" type="4" value="0.000000"></param>
+				<param name="Value1.Value1_green" type="4" value="0.000000"></param>
+				<param name="Value1.Value1_blue" type="4" value="0.000000"></param>
+				<param name="Value1.Value1_alpha" type="4" value="1.000000"></param>
+				<param_ext name="Reference1" type="31" value="self.Color"></param_ext>
+				<param_ext name="Reference" type="31" value="self.StrandColor"></param_ext>
+				<portdef name="Value1" type="512" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<portdef name="Value" type="512" structure="2" group="2" instance="1" port="0" groupname="Value"></portdef>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">758</prop>
+					<prop name="posy">1455</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Turbulize Around Value" version="1.0" index="3">
+				<param name="NoiseType" type="3" value="1"></param>
+				<param name="Base_Value.Base_Value_x" type="4" value="0.000000"></param>
+				<param name="Base_Value.Base_Value_y" type="4" value="0.000000"></param>
+				<param name="Base_Value.Base_Value_z" type="4" value="0.000000"></param>
+				<param name="Variance.Variance_x" type="4" value="0.000000"></param>
+				<param name="Variance.Variance_y" type="4" value="2.000000"></param>
+				<param name="Variance.Variance_z" type="4" value="0.000000"></param>
+				<param name="Turbulence_Scale" type="4" value="10.000000"></param>
+				<param name="Animated" type="11" value="false"></param>
+				<param name="Animation_Speed" type="4" value="0.500000"></param>
+				<param name="Seed" type="3" value="47238472"></param>
+				<param name="Complexity" type="3" value="1"></param>
+				<param name="Turbulence_Center.Turbulence_Center_x" type="4" value="0.000000"></param>
+				<param name="Turbulence_Center.Turbulence_Center_y" type="4" value="0.000000"></param>
+				<param name="Turbulence_Center.Turbulence_Center_z" type="4" value="0.000000"></param>
+				<param name="Turbulence_Center_Movement.Turbulence_Center_Movement_x" type="4" value="0.000000"></param>
+				<param name="Turbulence_Center_Movement.Turbulence_Center_Movement_y" type="4" value="0.000000"></param>
+				<param name="Turbulence_Center_Movement.Turbulence_Center_Movement_z" type="4" value="0.000000"></param>
+				<portdef name="Base_Value" type="16" structure="2" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Animated" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Animation_Speed" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Complexity" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Seed" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Variance" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Turbulence_Scale" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Turbulence_Center_Movement" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Turbulence_Center" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-278</prop>
+					<prop name="posy">1461</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="4">
+				<param name="reference" type="31" value="Texture_Map"></param>
+				<param_ext name="reference" type="31" value="Texture_Map"></param_ext>
+				<portdef name="source" type="2048" structure="2" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">449</prop>
+					<prop name="posy">1385</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="5">
+				<param name="reference" type="31" value="self.StrandColor"></param>
+				<param_ext name="reference" type="31" value="self.StrandColor"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">257</prop>
+					<prop name="posy">1584</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SelectInArrayNode" index="6">
+				<param name="index" type="3" value="0"></param>
+				<param name="array.array_red" type="4" value="0.000000"></param>
+				<param name="array.array_green" type="4" value="0.000000"></param>
+				<param name="array.array_blue" type="4" value="0.000000"></param>
+				<param name="array.array_alpha" type="4" value="1.000000"></param>
+				<portdef name="index" type="2" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="array" type="512" structure="2" group="0" instance="0" port="1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">490</prop>
+					<prop name="posy">1597</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="LinearInterpolateNode" index="7">
+				<param name="first.first_x" type="4" value="0.000000"></param>
+				<param name="first.first_y" type="4" value="0.000000"></param>
+				<param name="first.first_z" type="4" value="0.000000"></param>
+				<param name="second.second_x" type="4" value="0.000000"></param>
+				<param name="second.second_y" type="4" value="0.000000"></param>
+				<param name="second.second_z" type="4" value="0.000000"></param>
+				<param name="blend" type="4" value="0.000000"></param>
+				<param name="clamp" type="11" value="false"></param>
+				<portdef name="first" type="16" structure="2" group="0" instance="0" port="0"></portdef>
+				<portdef name="second" type="16" structure="2" group="0" instance="0" port="1"></portdef>
+				<portdef name="blend" type="4" structure="1" group="0" instance="0" port="2"></portdef>
+				<portdef name="clamp" type="1" structure="1" group="0" instance="0" port="3"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-19</prop>
+					<prop name="posy">1400</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="geometry" username="Emitter" basename="Emitter" portlabel="Emitter" exposetype="single"> </port>
+			<port index="2" portname="Execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="3" portname="Variance" username="Variance" basename="Variance" portlabel="Variance" exposetype="single"> </port>
+			<port index="3" portname="Turbulence_Scale" username="Turbulence_Scale" basename="Turbulence Scale" portlabel="Turbulence Scale" exposetype="single"> </port>
+			<port index="4" portname="reference" username="Reference" basename="Reference" portlabel="Reference" exposetype="single"> </port>
+			<port index="7" portname="blend" username="Turbulence_Blend" basename="Turbulence Blend" portlabel="Turbulence Blend" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="value" to_node="7" to_port="first"> </cnx>
+			<cnx from_node="1" from_port="value" to_node="3" to_port="Base_Value"> </cnx>
+			<cnx from_node="5" from_port="value" to_node="6" to_port="array"> </cnx>
+			<cnx from_node="0" from_port="location" to_node="4" to_port="source"> </cnx>
+			<cnx from_node="3" from_port="Value" to_node="7" to_port="second"> </cnx>
+			<cnx from_node="7" from_port="result" to_node="0" to_port="position"> </cnx>
+			<cnx from_node="4" from_port="value" to_node="2" to_port="Value"> </cnx>
+			<cnx from_node="6" from_port="value" to_node="2" to_port="Value1"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Emitter"> </item>
+			<item type="input" name="Reference"> </item>
+			<item type="input" name="Variance"> </item>
+			<item type="input" name="Turbulence_Scale"> </item>
+			<item type="input" name="Turbulence_Blend"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+		<blob_dictionary>
+		</blob_dictionary>
+	</definition>
+</xsi_file>
